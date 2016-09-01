@@ -11,6 +11,10 @@ a{text-decoration: none; color:#0096ff}
 .col3{float:right;}
 
 
-.page_tagline, .page_title{text-align: center}
+.page_tagline{text-align:center; font-size: 18px}
+.page_title{text-align: center;  font-size: 36px}
+
+.product_tagline, .product_title{font-size: 16px}
+
 .title{font-size:20px;}
 .description{padding:10px;}
