@@ -1,3 +1,4 @@
+*{margin-left:auto;margin-right:auto}
 body{font-family: "Arial"}
 a{text-decoration: none;}
 
@@ -9,5 +10,7 @@ a{text-decoration: none;}
 .col2{margin:10px auto;}
 .col3{float:right;}
 
+
+.page_tagline, .page_title{text-align: center}
 .title{font-size:20px;}
 .description{padding:10px;}
