@@ -31,13 +31,16 @@ function domobj(){
 
   self.updatedom = function(){
     var i=0
+    var deferred = new $.Deferred();
     thishtml="<div class='row-fluid'>";
 
     for( i=0; i< self.products.length ; i++){
       thishtml += self.products[i].htmlview;
     }
     thishtml += "</div>"
+    deferred.resolve();
     $("#content").append(thishtml)
+    return deferred.promise();
   }
 
 }
@@ -73,6 +76,14 @@ var Promise2 = Promise1.then(function(){
 var Promise3 = Promise2.then(function(){
   console.log("promise3");
   page.updatedom();
+})
+
+var Promise4 = Promise3.then(function(){
+  console.log("promise4");
+  $('button.close').on('click', function(){
+    var product = $(this).parent();
+    $(product).remove();
+  })
 })
 
 starter.resolve();
