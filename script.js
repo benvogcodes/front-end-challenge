@@ -31,12 +31,12 @@ function domobj(){
 
   self.updatedom = function(){
     var i=0
-    thishtml='';
+    thishtml="<div class='row-fluid'>";
+
     for( i=0; i< self.products.length ; i++){
-      if (i % 3 == 0 ){  thishtml += "<div class='row-fluid'>"; console.log("START") }
       thishtml += self.products[i].htmlview;
-      if ((i % 3 == 2) || i == (self.products.length-1) ){thishtml += "</div>";console.log("FINISH")}
     }
+    thishtml += "</div>"
     $("#content").append(thishtml)
   }
 
