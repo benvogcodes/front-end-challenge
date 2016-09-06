@@ -47,6 +47,7 @@ function domobj(){
 
 function productobj(product, i){
   var self          = this;
+  self.description  = product.description
   self.photo        = product.photos.medium_half
   self.title        = product.name
   self.tagline      = product.tagline
@@ -56,7 +57,7 @@ function productobj(product, i){
   self.custom_class = "col"+ ((i % 3) +1)
 
   self.updatehtml= function(template){
-    self.htmlview = template.replace('{image}', self.photo).replace('{title}', self.title).replace('{tagline}', self.tagline).replace('{url}', self.url).replace('{custom_class}', self.custom_class);
+    self.htmlview = template.replace('{description}', self.description).replace('{image}', self.photo).replace('{title}', self.title).replace('{tagline}', self.tagline).replace('{url}', self.url).replace('{custom_class}', self.custom_class);
   };
 }
 
@@ -86,13 +87,11 @@ var Promise4 = Promise3.then(function(){
   })
 
   $('.product-container').hover(function(){
-    console.log('hi mom');
     var clickedOverlay = $(this).find('.overlay');
-    $(clickedOverlay).css( "width", '298px');
+    $(clickedOverlay).css({ 'width':'298px','color':'rgba(255,255,255, 0.8)'});
   }, function(){
-    console.log('bye mom');
     var clickedOverlay = $(this).find('.overlay');
-    $(clickedOverlay).css( "width", '0px');
+    $(clickedOverlay).css({ 'width':'0px','color':'transparent'});
   })
 })
 
