@@ -84,6 +84,16 @@ var Promise4 = Promise3.then(function(){
     var product = $(this).parent();
     $(product).remove();
   })
+
+  $('.product-container').hover(function(){
+    console.log('hi mom');
+    var clickedOverlay = $(this).find('.overlay');
+    $(clickedOverlay).css( "width", '298px');
+  }, function(){
+    console.log('bye mom');
+    var clickedOverlay = $(this).find('.overlay');
+    $(clickedOverlay).css( "width", '0px');
+  })
 })
 
 starter.resolve();
