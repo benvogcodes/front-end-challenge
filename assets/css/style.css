@@ -10,3 +10,5 @@ a{text-decoration: none; color:#0096ff !important}
 
 .title{font-size:20px;}
 .description{padding:10px;}
+
+.overlay{height:286px;width:0%;position:fixed;background-color: rgba(0,150,255, 0.95);z-index: 1;color:transparent;}
