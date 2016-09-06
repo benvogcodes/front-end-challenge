@@ -32,7 +32,7 @@ function domobj(){
   self.updatedom = function(){
     var i=0
     var deferred = new $.Deferred();
-    thishtml="<div class='row-fluid'>";
+    thishtml="<div class='row-fluid text-center'>";
 
     for( i=0; i< self.products.length ; i++){
       thishtml += self.products[i].htmlview;
