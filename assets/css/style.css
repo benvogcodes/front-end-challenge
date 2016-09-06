@@ -1,14 +1,14 @@
 a{text-decoration: none; color:#0096ff !important}
 
 .product-container{width:300px; border:1px solid #aaa; margin:10px; display:inline-block;}
-.product-container img{width:100%; height:auto;}
+.product-container img{width:100%;}
 
-.page_tagline{text-align:center; font-size: 18px}
-.page_title{text-align: center;  font-size: 36px}
+.page_tagline{text-align:center; font-size:18px}
+.page_title{text-align:center; font-size:36px}
 
-.product_tagline, .product_title{font-size: 16px}
+.product_tagline, .product_title{font-size:16px}
 
 .title{font-size:20px;}
 .description{padding:10px;}
 
-.overlay{height:286px;width:0%;position:absolute;background-color: rgba(0,150,255, 0.95);z-index: 1;color:transparent;}
+.overlay{height:286px; width:0%; position:absolute; background-color:rgba(0,150,255, 0.95); z-index:1; color:transparent;}
